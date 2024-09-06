@@ -1,13 +1,13 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { UsersService } from './users.service';
-import { UserEntity } from './entities/user.entity';
+import { UsersService } from '../src/users/users.service';
+import { UserEntity } from '../src/users/entities/user.entity';
 import { getRepositoryToken } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { BadRequestException, UnauthorizedException } from '@nestjs/common';
 import * as bcrypt from 'bcrypt';
 import * as jwt from 'jsonwebtoken';
-import { UserSignUpDto } from './dto/user-signup.dto';
-import { UserSignInDto } from './dto/user-signin.dto';
+import { UserSignUpDto } from '../src/users/dto/user-signup.dto';
+import { UserSignInDto } from '../src/users/dto/user-signin.dto';
 import { Roles } from 'src/utility/common/user-roles.enum';
 
 describe('UsersService', () => {

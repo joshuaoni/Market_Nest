@@ -1,9 +1,9 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { UsersController } from './users.controller';
-import { UsersService } from './users.service';
-import { UserSignUpDto } from './dto/user-signup.dto';
-import { UserSignInDto } from './dto/user-signin.dto';
-import { UserEntity } from './entities/user.entity';
+import { UsersController } from '../src/users/users.controller';
+import { UsersService } from '../src/users/users.service';
+import { UserSignUpDto } from '../src/users/dto/user-signup.dto';
+import { UserSignInDto } from '../src/users/dto/user-signin.dto';
+import { UserEntity } from '../src/users/entities/user.entity';
 import { Roles } from 'src/utility/common/user-roles.enum';
 
 describe('UsersController', () => {

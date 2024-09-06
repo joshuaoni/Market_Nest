@@ -1,13 +1,13 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { getRepositoryToken } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { CategoriesService } from './categories.service';
+import { CategoriesService } from '../src/categories/categories.service';
 import { NotFoundException } from '@nestjs/common';
-import { CategoryEntity } from './entities/category.entity';
+import { CategoryEntity } from '../src/categories/entities/category.entity';
 import { UserEntity } from 'src/users/entities/user.entity';
 import { Roles } from 'src/utility/common/user-roles.enum';
-import { CreateCategoryDto } from './dto/create-category.dto';
-import { UpdateCategoryDto } from './dto/update-category.dto';
+import { CreateCategoryDto } from '../src/categories/dto/create-category.dto';
+import { UpdateCategoryDto } from '../src/categories/dto/update-category.dto';
 
 describe('CategoriesService', () => {
   let service: CategoriesService;

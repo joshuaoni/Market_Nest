@@ -1,11 +1,11 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { CategoriesController } from './categories.controller';
-import { CategoriesService } from './categories.service';
-import { CategoryEntity } from './entities/category.entity';
+import { CategoriesController } from '../src/categories/categories.controller';
+import { CategoriesService } from '../src/categories/categories.service';
+import { CategoryEntity } from '../src/categories/entities/category.entity';
 import { UserEntity } from 'src/users/entities/user.entity';
 import { Roles } from 'src/utility/common/user-roles.enum';
-import { CreateCategoryDto } from './dto/create-category.dto';
-import { UpdateCategoryDto } from './dto/update-category.dto';
+import { CreateCategoryDto } from '../src/categories/dto/create-category.dto';
+import { UpdateCategoryDto } from '../src/categories/dto/update-category.dto';
 
 describe('CategoriesController', () => {
   let controller: CategoriesController;
